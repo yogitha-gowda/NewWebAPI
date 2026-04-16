@@ -1,0 +1,92 @@
+{
+  "Routes": [
+    
+    //  BRAND (PRODUCT SERVICE)
+    
+    {
+      "DownstreamPathTemplate": "/api/Brand/GetAllBrands",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7042
+        }
+      ],
+      "UpstreamPathTemplate": "/BykeStoresGateway/brands",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DangerousAcceptAnyServerCertificate": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/Brand/GetBrandById/{brdId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7042
+        }
+      ],
+      "UpstreamPathTemplate": "/BykeStoresGateway/mybrand/{brdId}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DangerousAcceptAnyServerCertificate": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/Brand/AddBrand",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7042
+        }
+      ],
+      "UpstreamPathTemplate": "/BykeStoresGateway/addbrand",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DangerousAcceptAnyServerCertificate": true
+    },
+
+    //  ORDER SERVICE 
+   
+    {
+      "DownstreamPathTemplate": "/api/Order/GetAllOrders",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7046
+        }
+      ],
+      "UpstreamPathTemplate": "/BykeStoresGateway/orders",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DangerousAcceptAnyServerCertificate": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/Order/GetOrderById/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7046
+        }
+      ],
+      "UpstreamPathTemplate": "/BykeStoresGateway/order/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DangerousAcceptAnyServerCertificate": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/Order/AddOrder",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7046
+        }
+      ],
+      "UpstreamPathTemplate": "/BykeStoresGateway/addorder",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DangerousAcceptAnyServerCertificate": true
+    }
+  ],
+
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7073"
+  }
+}
