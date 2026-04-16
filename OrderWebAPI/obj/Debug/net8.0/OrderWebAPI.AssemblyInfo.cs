@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrderWebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a56c895bf8f84eda9f31062d6eed401b5060f40")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrderWebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrderWebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
